@@ -2,6 +2,11 @@
 
 > A sample VueJS project
 
+The project is built with:
+
+- [VueJS](https://vuejs.org/)
+- [Bootstrap VueJS](https://bootstrap-vue.js.org)
+
 ## Build Setup
 
 ``` bash
@@ -28,3 +33,9 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## Development & Testing
+
+https://changelogs.md/ & https://changelogs.md/api/
+https://jsonplaceholder.typicode.com/
