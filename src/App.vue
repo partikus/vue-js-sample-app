@@ -2,10 +2,10 @@
   <div id="app">
     <b-container fluid class="bv-example-row">
       <b-row>
-        <b-col>
+        <b-col cols="6">
           <recently-crawled></recently-crawled>
         </b-col>
-        <b-col>
+        <b-col cols="6">
           <router-view/>
         </b-col>
       </b-row>

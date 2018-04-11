@@ -10,7 +10,22 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api/posts': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/posts': '/posts'
+        }
+      },
+      '/api/changelogs': {
+        target: 'https://changelogs.md/api',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api/changelogs': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

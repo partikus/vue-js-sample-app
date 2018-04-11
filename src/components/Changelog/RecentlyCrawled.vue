@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Recently Crawled</h1>
-    <b-table striped hover :items="items"></b-table>
+    <b-table responsive striped hover :items="items"></b-table>
   </div>
 </template>
 
@@ -14,11 +14,9 @@ export default {
     }
   },
   mounted () {
-    // Vue.http.get('http://cors-proxy.htmldriven.com/?url=https://changelogs.md/api/recently-crawled/').then(response => {
-    this.$http.get('https://crossorigin.me/https://changelogs.md/api/recently-crawled/')
-      .then(response => {
-        this.items = response.body.content
-      })
+    this.$http
+      .get('/api/changelogs/recently-crawled/')
+      .then(response => { this.items = response.body.content })
   }
 }
 </script>
