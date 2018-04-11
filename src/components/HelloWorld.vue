@@ -80,6 +80,8 @@
         </a>
       </li>
     </ul>
+
+    <img src="../assets/logo.png">
   </div>
 </template>
 

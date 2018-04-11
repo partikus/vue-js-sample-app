@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <b-container class="bv-example-row">
+    <b-container fluid class="bv-example-row">
       <b-row>
         <b-col>
           <recently-crawled></recently-crawled>
@@ -11,7 +10,6 @@
         </b-col>
       </b-row>
     </b-container>
-
   </div>
 </template>
 

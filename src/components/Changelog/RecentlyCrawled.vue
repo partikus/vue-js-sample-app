@@ -1,23 +1,23 @@
 <template>
-  <b-table striped hover :items="items"></b-table>
+  <div>
+    <h1>Recently Crawled</h1>
+    <b-table striped hover :items="items"></b-table>
+  </div>
 </template>
 
 <script>
-import Vue from 'vue'
-
 export default {
   name: 'RecentlyCrawled',
-  data: () => {
+  data () {
     return {
       items: []
     }
   },
-  created: () => {
+  mounted () {
     // Vue.http.get('http://cors-proxy.htmldriven.com/?url=https://changelogs.md/api/recently-crawled/').then(response => {
-    Vue.http.get('https://crossorigin.me/https://changelogs.md/api/recently-crawled/')
+    this.$http.get('https://crossorigin.me/https://changelogs.md/api/recently-crawled/')
       .then(response => {
-        this.items = response.content
-        console.log(this.items)
+        this.items = response.body.content
       })
   }
 }
