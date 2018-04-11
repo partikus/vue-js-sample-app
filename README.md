@@ -7,6 +7,11 @@ The project is built with:
 - [VueJS](https://vuejs.org/)
 - [Bootstrap VueJS](https://bootstrap-vue.js.org)
 
+Tutorials:
+* https://vuejs.org/v2/guide/
+* https://vuejs.org/v2/cookbook/
+* https://css-tricks.com/guides/vue/
+
 ## Build Setup
 
 ``` bash
