@@ -1,12 +1,27 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col>
+          <recently-crawled></recently-crawled>
+        </b-col>
+        <b-col>
+          <router-view/>
+        </b-col>
+      </b-row>
+    </b-container>
+
   </div>
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import RecentlyCrawled from '@/components/Changelog/RecentlyCrawled'
+
 export default {
+  components: {RecentlyCrawled},
   name: 'App'
 }
 </script>
